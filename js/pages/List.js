@@ -122,13 +122,13 @@ export default {
 
                     <p>achieved the record on the level that is listed on the site - please check the level ID before you submit a record</p>
 
-                    <p>level must be up to 29 seconds long</p>
+                    <p>levels cant be longer than 2 minutes (cant be xl)</p>
 
                     <p>must have audible or clicks/taps in the video. edited audio only does not count</p>
 
                     <p>the recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt. everyplay records are exempt from this</p>
 
-                    <p>must have sufficient amounts of brainrot, mod team accepts levels that have enough brainrot</p>
+                    <p>must be poopy in some aspect, gamaplay, deco or song. also needs to have a text related to poo</p>
 
                     <p>the recording must also show the player hit the endwall, or the completion will be invalidated.</p>
 
@@ -136,7 +136,7 @@ export default {
 
                     <p>do not use easy modes, only a record of the unmodified level qualifies</p>
 
-                    <p>once a level falls into The Basement, records will stop being accepted for the level</p>
+                    <p>once a level falls into The Toilet, records will stop being accepted for the level</p>
                 </div>
             </div>
         </main>
