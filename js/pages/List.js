@@ -116,7 +116,7 @@ export default {
                     <h3>Submission Requirements</h3>
 
                     <div class="requirements">
-                    <p>achieved the record without using hacks (CBF/CBS, FPS bypass allowed anywhere between 30-720 FPS)</p>
+                    <p>achieved the record without using hacks (CBF/CBS, FPS bypass allowed)</p>
 
                     <p>must show cheat indicator, if using a mod menu</p>
 
