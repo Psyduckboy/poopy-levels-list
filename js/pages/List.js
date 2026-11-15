@@ -22,7 +22,7 @@ export default {
         </main>
         <main v-else class="page-list">
             <div class="list-container">
-            <input v-model="searchQuery" placeholder="Input text to Filter! here..." class="btn" type="text" id="filterForLevelName" style="width: 80%; margin-bottom: 0.5em;">   
+            <input v-model="searchQuery" placeholder="Search for Levels" class="btn" type="text" id="filterForLevelName" style="width: 80%; margin-bottom: 0.5em;">   
                 <table class="list" v-if="list && list.length">
                     <tr v-for="(item, i) in filteredListDisplay" :key="item.originalIndex">
                         <td class="rank">
