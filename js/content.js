@@ -45,7 +45,15 @@ export async function fetchEditors() {
         return null;
     }
 }
-
+export async function fetchDates() {
+    try {
+        const datesResults = await fetch(`${dir}/_oldlists.json`);
+        const dates = await datesResults.json();
+        return dates;
+    } catch {
+        return null;
+    }
+}
 export async function fetchLeaderboard() {
     const list = await fetchList();
 
@@ -121,4 +129,72 @@ export async function fetchLeaderboard() {
 
     // Sort by total score
     return [res.sort((a, b) => b.total - a.total), errs];
+}
+    export async function fetchPacks() {
+        const packsResult = await fetch(`${dir}/_packs.json`);
+        try {
+            
+            const packs = await packsResult.json();
+            return await Promise.all(
+                packs.map(async (path, rank) => {
+                    console.error(`${dir}/packs/${path}.json`);
+                    const packResult = await fetch(`../data/packs/${path}.json`);
+                    try {
+                        const pack = await packResult.json();
+                        return [
+                            {
+                                ...pack,
+                            },
+                            null,
+                        ];
+                    } catch {
+                        console.error(`Failed to load pack #${rank + 1} ${path}.`);
+                        return [null, path];
+                    }
+                }),
+            );
+        } catch {
+            console.error(`Failed to load packs.`);
+            return null;
+        }
+    }
+export async function fetchChangelog() {
+    try {
+        const changelogResults = await fetch(`${dir}/_changelog.json`);
+        const changelog = await changelogResults.json();
+        return changelog;
+    } catch {
+        return null;
+    }
+}
+
+export async function fetchdailylul() {
+    const listResult = await fetch(`${dir}/_le daily.json`);
+    try {
+        const list = await listResult.json();
+        return await Promise.all(
+            list.map(async (path, rank) => {
+                const levelResult = await fetch(`${dir}/${path}.json`);
+                try {
+                    const level = await levelResult.json();
+                    return [
+                        {
+                            ...level,
+                            path,
+                            records: level.records.sort(
+                                (a, b) => b.percent - a.percent,
+                            ),
+                        },
+                        null,
+                    ];
+                } catch {
+                    console.error(`Failed to load le daily #${rank + 1} ${path}.`);
+                    return [null, path];
+                }
+            }),
+        );
+    } catch {
+        console.error(`Failed to load le daily.`);
+        return null;
+    }
 }
