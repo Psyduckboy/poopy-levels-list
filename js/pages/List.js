@@ -122,7 +122,7 @@ export default {
 
                     <p>achieved the record on the level that is listed on the site, please check the level ID before you submit a record</p>
 
-                    <p>levels cant be longer than 2 minutes (cant be xl)</p>
+                    <p>levels must be atleast 20 seconds long and cant be longer than 2 minutes (cant be xl)</p>
 
                     <p>must have audible or clicks/taps in the video. edited audio only does not count</p>
 
