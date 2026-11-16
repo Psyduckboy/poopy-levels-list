@@ -120,7 +120,7 @@ export default {
 
                     <p>must show cheat indicator, if using a mod menu</p>
 
-                    <p>achieved the record on the level that is listed on the site - please check the level ID before you submit a record</p>
+                    <p>achieved the record on the level that is listed on the site, please check the level ID before you submit a record</p>
 
                     <p>levels cant be longer than 2 minutes (cant be xl)</p>
 
@@ -133,6 +133,8 @@ export default {
                     <p>the recording must also show the player hit the endwall, or the completion will be invalidated.</p>
 
                     <p>not recommended to use secret routes or bug routes</p>
+
+                    <p>levels cant require more than 13 cps</p>
 
                     <p>do not use easy modes, only a record of the unmodified level qualifies</p>
 
