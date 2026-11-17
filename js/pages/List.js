@@ -81,7 +81,7 @@ export default {
                     <h2>Welcome to the Poopy Levels List!</h2>
                     <p>Click the levels on the left side to see information about them!</p>
                     <p>For more information about the submission rules check the right side!</p>
-                    <p>Don't forget to join our <a href="YOUR_DISCORD_INVITE_LINK" target="_blank">Discord server</a>!</p>
+                    <p>Don't forget to join our <a href="https://discord.gg/Af8hUuHfG3" target="_blank">Discord server</a>!</p>
 
                     <button class="btn" @click="selected = Math.ceil(Math.random() * list.length)">
                         <span class="type-label-lg">I'm feeling lucky</span>
