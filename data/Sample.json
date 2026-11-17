@@ -1,0 +1,12 @@
+{
+    "id": ID,
+    "name": "LevelName",
+    "author": "LevelUploader",
+    "creators": ["Creator1", "Creator2"],
+    "verifier": "Verifier",
+    "verification": "LINK",
+    "percentToQualify": 100,
+    "initial": "INITIAL PLACEMENT",
+    "records": [
+    ]
+}
