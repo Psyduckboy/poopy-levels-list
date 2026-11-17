@@ -26,8 +26,8 @@ export default {
                 <table class="list" v-if="list && list.length">
                     <tr v-for="(item, i) in filteredListDisplay" :key="item.originalIndex">
                         <td class="rank">
-                            <p v-if="item.originalIndex + 1 <= 150" class="type-label-lg">#{{ item.originalIndex + 1 }}</p>
-                            <p v-else class="type-label-lg">Legacy</p>
+                            <p v-if="item.originalIndex + 1 <= 75" class="type-label-lg">#{{ item.originalIndex + 1 }}</p>
+                            <p v-else class="type-label-lg">The Toilet</p>
                         </td>
                         <td class="level" :class="{ 'active': selected == item.originalIndex, 'error': !item.level }">
                             <button @click="selected = item.originalIndex">
