@@ -138,7 +138,7 @@ export async function fetchLeaderboard() {
             return await Promise.all(
                 packs.map(async (path, rank) => {
                     console.error(`${dir}/packs/${path}.json`);
-                    const packResult = await fetch(`../data/packs/${path}.json`);
+                    const packResult = await fetch(`${dir}/packs/${path}.json`);
                     try {
                         const pack = await packResult.json();
                         return [
