@@ -103,7 +103,6 @@ export default {
                         <p class="type-label-md">Certain features implemented by <a href="https://sgdlist.pages.dev/" target="_blank">The SGD List</a></p>
                         
                     <template v-if="editors">
-                    </div>
                         <h3>List Editors</h3>
                         <ol class="editors">
                             <li v-for="editor in editors">
