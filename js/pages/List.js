@@ -87,7 +87,6 @@ export default {
                     <button class="btn" @click="selected = Math.ceil(Math.random() * list.length)">
                         <span class="type-label-lg">I'm feeling lucky</span>
                     </button>
-
                 </div>
                 <div v-else class="level" style="height: 100%; justify-content: center; align-items: center;">
                     <p>Error! (If this error doesn't go away after some time, please contact staff)</p>
