@@ -191,7 +191,7 @@ export default {
         // Hide loading spinner
         this.list = await fetchList();
         this.editors = await fetchEditors();
-        this.leDaily = await fetchdailylul();
+        // this.leDaily = await fetchdailylul();
         
           
         // Error handling
