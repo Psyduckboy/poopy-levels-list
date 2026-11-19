@@ -83,7 +83,7 @@ export default {
                     <p>For more information about the submission rules check the right side!</p>
                     <p>Don't forget to join our <a href="https://discord.gg/Af8hUuHfG3" target="_blank">Discord server</a>!</p>
                     <h2>daily</h2>
-                    <p>{{ Daily[0][0].name }} ({{ Daily[0][0].id }})</p>
+                    <p>{{ leDaily[0][0].name }} ({{ leDaily[0][0].id }})</p>
                     <button class="btn" @click="selected = Math.ceil(Math.random() * list.length)">
                         <span class="type-label-lg">I'm feeling lucky</span>
                     </button>
