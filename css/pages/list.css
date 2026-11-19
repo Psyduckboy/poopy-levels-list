@@ -133,8 +133,9 @@
     line-height: 1.2;
 }
 
-.og h3:first-of-type {
-    margin-bottom: 18px;
+.og h3 {
+    margin-top: 20px;
+    margin-bottom: 16px;
 }
 
 .og .editors {
@@ -143,5 +144,6 @@
 }
 
 .og .requirements {
-    margin-top: 18px;
+    margin-top: 20px;
+    margin-bottom: 16px;
 }
