@@ -140,6 +140,8 @@ export default {
                     <p>once a level falls into The Toilet, records will stop being accepted for the level</p>
                 </div>
             </div>
+        </div>
+    </div>
         </main>
     `,
     data: () => ({
@@ -191,7 +193,7 @@ export default {
         // Hide loading spinner
         this.list = await fetchList();
         this.editors = await fetchEditors();
-        // this.leDaily = await fetchdailylul();
+        this.leDaily = await fetchdailylul();
         
           
         // Error handling
