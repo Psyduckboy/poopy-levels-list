@@ -146,7 +146,7 @@ export default {
     data: () => ({
         list: [],
         editors: [],
-        leDaily: []:
+        leDaily: [],
         loading: true,
         selected: null,
         errors: [],
