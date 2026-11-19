@@ -99,7 +99,6 @@ export default {
                     </div>
                    <div class="og">
                         <p class="type-label-md">Website layout made by <a href="https://tsl.pages.dev/" target="_blank">The Shitty List</a></p>
-                        <br>
                         <p class="type-label-md">Certain features implemented by <a href="https://sgdlist.pages.dev/" target="_blank">The SGD List</a></p>
                         
                     <template v-if="editors">
