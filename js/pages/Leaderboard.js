@@ -10,7 +10,7 @@ export default {
     data: () => ({
         leaderboard: [],
         loading: true,
-        selected: 0,
+        selected: null,
         err: [],
     }),
     template: `
@@ -48,8 +48,12 @@ export default {
                         </tr>
                     </table>
                 </div>
-                <div class="player-container">
-                    <div class="player">
+                   <div class="player-container">
+                        <div class="player" v-if="selected != null">
+                        <div v-else class="player">
+                        <h2>Welcome to the PLL Leaderboard!</h2>
+                        <p>Click a player on the left side to see their stats!</p>
+                        </div>
                         <h1>#{{ selected + 1 }} {{ entry.user }}</h1>
                         <h3>{{ entry.total }}</h3>
                         <h2 v-if="entry.verified.length > 0">Verified ({{ entry.verified.length}})</h2>
@@ -101,7 +105,7 @@ export default {
     `,
     computed: {
         entry() {
-            return this.leaderboard[this.selected];
+        return this.selected == null ? null : this.leaderboard[this.selected];
         },
     },
     async mounted() {
