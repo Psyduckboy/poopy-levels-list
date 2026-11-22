@@ -1,0 +1,12 @@
+{
+    "id": 2,
+    "name": "invisipoo",
+    "author": "zBean1e",
+    "creators": ["zBean1e"],
+    "verifier": "bean1e",
+    "verification": "LINK",
+    "percentToQualify": 100,
+    "initial": "#2",
+    "records": [
+    ]
+}
