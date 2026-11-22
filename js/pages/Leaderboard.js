@@ -95,6 +95,7 @@ export default {
                     <div v-else class="player">
                         <h2>Welcome to the PLL Leaderboard!</h2>
                         <p>Click a player on the left side to see their stats!</p>
+                        <p>To get on the leaderboard, submit your records and levels with submission form, available through the button in the top right!</p>
                     </div>
                 </div>
             </div>
