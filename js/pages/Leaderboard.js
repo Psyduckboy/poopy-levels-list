@@ -33,7 +33,19 @@ export default {
                     style="width: 80%; margin-bottom: 0.5em;"
                     >
                     <table class="board">
-                        <tr v-for="(ientry, i) in leaderboard">
+                        <tr v-for="item in filteredLeaderboard" :key="item.originalIndex">
+                        <td class="rank">
+                            <p class="type-label-lg">#{{ item.originalIndex + 1 }}</p>
+                        </td>
+                        <td class="total">
+                            <p class="type-label-lg">{{ localize(item.total) }}</p>
+                        </td>
+                        <td class="user" :class="{ 'active': selected == item.originalIndex }">
+                        <button @click="selected = item.originalIndex">
+                        <span class="type-label-lg">{{ item.user }}</span>
+                    </button>
+                </td>
+            </tr>
                             <td class="rank">
                                 <p class="type-label-lg">#{{ i + 1 }}</p>
                             </td>
@@ -96,10 +108,23 @@ export default {
         </main>
     `,
     computed: {
-        entry() {
+    entry() {
         return this.selected == null ? null : this.leaderboard[this.selected];
-        },
     },
+
+    filteredLeaderboard() {
+        const search = this.searchQuery.toLowerCase().trim();
+
+        return this.leaderboard
+            .map((entry, index) => ({
+                ...entry,
+                originalIndex: index,
+            }))
+            .filter(entry =>
+                entry.user.toLowerCase().includes(search)
+            );
+    },
+},
     async mounted() {
         const [leaderboard, err] = await fetchLeaderboard();
         this.leaderboard = leaderboard;
