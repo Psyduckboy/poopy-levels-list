@@ -50,7 +50,7 @@ export default {
                 </div>
                    <div class="player-container">
                         <div class="player" v-if="selected != null">
-                        <div v-else class="player">
+                            <h1>#{{ selected + 1 }} {{ entry.user }}</h1>
                         <h2>Welcome to the PLL Leaderboard!</h2>
                         <p>Click a player on the left side to see their stats!</p>
                         </div>
