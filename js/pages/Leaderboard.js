@@ -99,6 +99,10 @@ export default {
                             </tr>
                         </table>
                     </div>
+                    <div v-else class="player">
+                        <h2>Welcome to the PLL Leaderboard!</h2>
+                        <p>Click a player on the left side to see their stats!</p>
+                    </div>
                 </div>
             </div>
         </main>
