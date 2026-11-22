@@ -25,6 +25,13 @@ export default {
                     </p>
                 </div>
                 <div class="board-container">
+                <input
+                v-model="searchQuery"
+                placeholder="Search for Players"
+                    class="btn"
+                    type="text"
+                    style="width: 80%; margin-bottom: 0.5em;"
+                    >
                     <table class="board">
                         <tr v-for="(ientry, i) in leaderboard">
                             <td class="rank">
