@@ -6,7 +6,7 @@
     "verifier": "bean1e",
     "verification": "LINK",
     "percentToQualify": 100,
-    "initial": "#2",
+    "initial": "#1",
     "records": [
     ]
 }
