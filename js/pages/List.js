@@ -126,9 +126,9 @@ export default {
 
                     <p>the recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt. everyplay records are exempt from this</p>
 
-                    <p>must be poopy in some aspect, gamaplay, deco or song. also needs to have a text related to poo. brainrot is NOT poop unless it has been modified to be poopy</p>
+                    <p>must be poopy in some aspect, gameplay, deco or song. also needs to have a text related to poo. brainrot is NOT poop unless it has been modified to be poopy</p>
 
-                    <p>the recording must also show the player hit the endwall, or the completion will be invalidated.</p>
+                    <p>the recording must also show the player hit the endwall, or the completion will be invalidated</p>
 
                     <p>not recommended to use secret routes or bug routes</p>
 
