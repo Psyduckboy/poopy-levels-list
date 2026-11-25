@@ -111,7 +111,7 @@ export default {
                             </li>
                         </ol>
                     </template>
-                    <h3>Submission Requirements</h3>
+                    <h1>Submission Requirements</h1>
 
                     <div class="requirements">
 
@@ -135,7 +135,7 @@ export default {
 
                     <p>once a level falls into The Toilet, records will stop being accepted for the level</p>
 
-                    <h2>level requirements/rules</h2>
+                    <h1>level requirements/rules</h1>
 
                     <p>levels must be atleast 20 seconds long and at max 2 minutes long (cant be xl)</p>
 
