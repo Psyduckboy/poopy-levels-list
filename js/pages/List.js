@@ -115,7 +115,7 @@ export default {
 
                     <div class="requirements">
 
-                    <h4>submission requirements</h4>
+                    <h5>submission requirements</h5>
                     
                     <p>achieved the record without using hacks (CBF/CBS, FPS bypass allowed)</p>
 
@@ -135,7 +135,7 @@ export default {
 
                     <p>once a level falls into The Toilet, records will stop being accepted for the level</p>
 
-                    <h4>level requirements/rules</h4>
+                    <h5>level requirements/rules</h5>
 
                     <p>levels must be atleast 20 seconds long and at max 2 minutes long (cant be xl)</p>
 
