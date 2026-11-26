@@ -90,6 +90,16 @@ export default {
                                 <td class="score"><p>+{{ localize(score.score) }}</p></td>
                             </tr>
                         </table>
+
+                        <h2 v-if="entry.created && entry.created.length > 0">Created ({{ entry.created.length }})</h2>
+                        <table class="table">
+                            <tr v-for="level in entry.created">
+                                <td class="rank"><p>#{{ level.rank }}</p></td>
+                                <td class="level">
+                                    <a class="type-label-lg" target="_blank" :href="level.link">{{ level.level }}</a>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
 
                     <div v-else class="player">
