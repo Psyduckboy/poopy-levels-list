@@ -111,11 +111,13 @@ export default {
                             </li>
                         </ol>
                     </template>
-                    <h3>Submission Requirements</h3>
+                    <h3>list rules or sum</h3>
 
                     <div class="requirements">
 
-                    <p>submission requirements</p>
+                    <p>
+                        <strong>submission requirements:</strong>
+                    </p>
                     
                     <p>achieved the record without using hacks (CBF/CBS, FPS bypass allowed)</p>
 
@@ -135,7 +137,9 @@ export default {
 
                     <p>once a level falls into The Toilet, records will stop being accepted for the level</p>
 
-                    <p>level requirements/rules</p>
+                    <p>
+                        <strong>level requirements:</strong>
+                    </p>
 
                     <p>levels must be atleast 20 seconds long and at max 2 minutes long (cant be xl)</p>
 
