@@ -137,6 +137,8 @@ export default {
 
                     <p>once a level falls into The Toilet, records will stop being accepted for the level</p>
 
+                    <p>it is recommended in solo levels to have the name of the creator and the name of the verifier to be the same. do not post many levels on the same account with different creator names to avoid creating spam in the leaderboards, as creating levels will be showed on your list profile</p>
+
                     <p>
                         <strong>level requirements:</strong>
                     </p>
