@@ -102,7 +102,7 @@ export default {
                         <p class="type-label-md">Certain features implemented from <a href="https://sgdlist.pages.dev/" target="_blank">The SGD List</a></p>
                         
                     <template v-if="editors">
-                        <h3>List Editors</h3>
+                        <h3>list editors</h3>
                         <ol class="editors">
                             <li v-for="editor in editors">
                                 <img :src="\`/assets/\${roleIconMap[editor.role]}\${store.dark ? '-dark' : ''}.svg\`" :alt="editor.role">
